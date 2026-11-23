@@ -1,0 +1,11 @@
+# Terraform working files and state: never commit them
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+tfplan
+*.tfplan
+# Variable values can hold real IPs or IDs; only the example is committed
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
