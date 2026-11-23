@@ -1,0 +1,15 @@
+# Example values. Copy this file to terraform.tfvars and replace them with your own.
+# Git ignores terraform.tfvars, so your real values stay out of the repository.
+
+# Existing resource group that receives every resource (Terraform doesn't create it)
+resource_group_name = "rg-hub-spoke-lab"
+
+# Azure region for every resource
+location = "eastus"
+
+# Short name used in resource names: 2 to 10 lowercase letters or digits
+prefix = "contoso"
+
+# The only source the firewall's DNAT rule accepts: your public IP as a /32.
+# 203.0.113.0/24 is a documentation range; replace it with your own address.
+web_allowed_source = "203.0.113.10/32"
